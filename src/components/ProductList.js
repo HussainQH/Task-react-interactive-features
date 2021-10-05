@@ -5,7 +5,7 @@ import SearchBar from "./SearchBar";
 import products from "../products";
 import { useState } from "react";
 
-const ProductList = () => {
+const ProductList = (props) => {
   const [query, setQuery] = useState("");
 
   const productList = products
@@ -13,7 +13,9 @@ const ProductList = () => {
     .filter((product) =>
       product.name.toLowerCase().includes(query.toLowerCase())
     )
-    .map((product) => <ProductItem product={product} key={product.id} />);
+    .map((product) => (
+      <ProductItem product={product} key={product.id} setInfo={props.setInfo} />
+    ));
 
   return (
     <>
