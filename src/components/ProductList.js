@@ -14,7 +14,12 @@ const ProductList = (props) => {
       product.name.toLowerCase().includes(query.toLowerCase())
     )
     .map((product) => (
-      <ProductItem product={product} key={product.id} setInfo={props.setInfo} />
+      <ProductItem
+        product={product}
+        key={product.id}
+        setInfo={props.setInfo}
+        setRemove={props.setRemove}
+      />
     ));
 
   return (

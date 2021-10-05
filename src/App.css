@@ -53,6 +53,8 @@
   padding: 10px;
   margin: 15px;
   font-weight: bold;
+
+  float: right;
 }
 
 .lightTheme {
@@ -61,4 +63,10 @@
 .darkTheme {
   background-color: rgba(0, 0, 0, 0.876);
   color: azure;
+}
+
+.danger {
+  padding: 10px;
+
+  font-weight: bold;
 }

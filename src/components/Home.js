@@ -1,8 +1,6 @@
 const Home = (props) => {
   return (
     <div className="home">
-      <h1>Cookies and Beyond</h1>
-      <h3>Where cookie maniacs gather</h3>
       <button
         onClick={() =>
           props.setTheme(
@@ -13,6 +11,12 @@ const Home = (props) => {
       >
         {props.theme === "darkTheme" ? "Light" : "Dark"} Theme
       </button>
+      <br></br>
+      <br></br>
+      <br></br>
+
+      <h1>Cookies and Beyond</h1>
+      <h3>Where cookie maniacs gather</h3>
 
       <img
         alt="cookie shop"

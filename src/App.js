@@ -18,11 +18,12 @@ function App() {
   });
 
   const [theme, setTheme] = useState("lightTheme");
+  const [remove, setRemove] = useState("");
 
   return (
     <div className={theme}>
       <Home setTheme={setTheme} theme={theme} />
-      <ProductList setInfo={setInfo} />
+      <ProductList setInfo={setInfo} setRemove={setRemove} />
       <Detail info={info} />
     </div>
   );
