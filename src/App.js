@@ -17,9 +17,11 @@ function App() {
     info: "The best choice for chocolate lovers",
   });
 
+  const [theme, setTheme] = useState("lightTheme");
+
   return (
-    <div>
-      <Home />
+    <div className={theme}>
+      <Home setTheme={setTheme} theme={theme} />
       <ProductList setInfo={setInfo} />
       <Detail info={info} />
     </div>

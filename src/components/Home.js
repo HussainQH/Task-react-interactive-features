@@ -1,9 +1,18 @@
-const Home = () => {
+const Home = (props) => {
   return (
     <div className="home">
       <h1>Cookies and Beyond</h1>
       <h3>Where cookie maniacs gather</h3>
-      <button> Change Theme</button>
+      <button
+        onClick={() =>
+          props.setTheme(
+            props.theme === "darkTheme" ? "lightTheme" : "darkTheme"
+          )
+        }
+        className="button"
+      >
+        {props.theme === "darkTheme" ? "Light" : "Dark"} Theme
+      </button>
 
       <img
         alt="cookie shop"

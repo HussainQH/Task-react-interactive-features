@@ -8,6 +8,10 @@ function Detail(props) {
       <p>{product.name}</p>
       <p className="product-price">{product.price} KD</p>
       <p>{product.info}</p>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
     </div>
   );
 }
